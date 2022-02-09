@@ -1,0 +1,19 @@
+Behaviour atau fungsi  dari string yang sering dipakai :
+
+        String header = $(By.id("headerTittle")).getText();
+        //di website header tulisannya "Facebook.com Indonesia"
+
+        Boolean Result =header.contains("Facebook.com");
+        //result = true;
+
+        Boolean condition1 = header.equals("facebook.com");
+        // condition 1 = false;
+
+        Boolean condition2 = header.equals("facebook.com indonesia");
+        // condition2 = false;
+
+        Boolean condition3 = header.equalsIgnoreCase("facebook.com indonesia");
+        //condition3 = true;
+
+        Boolean condition4 = header.equals("Facebook.com Indonesia");
+        //condition 4 =true
