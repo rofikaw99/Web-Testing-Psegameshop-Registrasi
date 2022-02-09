@@ -17,3 +17,10 @@ Behaviour atau fungsi  dari string yang sering dipakai :
 
         Boolean condition4 = header.equals("Facebook.com Indonesia");
         //condition 4 =true
+
+
+CRUD
+Create
+Read
+update
+Delete

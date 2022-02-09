@@ -21,6 +21,12 @@ public class DashboardPage extends PageObject {
     @FindBy(id ="menu_pim_viewEmployeeList")
     WebElement menuEmployeeList;
 
+    @FindBy(id="panel_draggable_0_0")
+    WebElement quickLaunch;
+
+    @FindBy(how=How.XPATH, using = "//*[@id='panel_resizable_0_0']/legend")
+    WebElement quickLaunchTitle;
+
 
     public String getLoggedinMessage(){
        return userLoggedIn.getText();
@@ -40,6 +46,14 @@ public class DashboardPage extends PageObject {
 
     public void clickEmployeeList(){
         menuEmployeeList.click();
+    }
+
+    public boolean verifyQuickLaunch (){
+        return quickLaunch.isDisplayed();
+    }
+
+    public String verifyQuickLaunchTitle(){
+        return quickLaunch.getText();
     }
 
 

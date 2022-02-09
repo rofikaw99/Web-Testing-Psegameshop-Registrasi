@@ -28,6 +28,7 @@ public class LoginStepDefinition {
     @Then("I can see my dashbord")
     public void i_can_see_my_dashbord() {
         loginStep.verifyDahsboard();
+        loginStep.verifyDashboardBody();
     }
 
 }

@@ -28,13 +28,16 @@ public class LoginStep {
 
     @Step
     public void verifyDahsboard(){
-
         assertTrue(dashboardPage.getLoggedinMessage().contains("Welcome"));
         assertEquals("Dashboard", dashboardPage.getDashboardHeader());
         assertTrue(dashboardPage.verifyLogo());
 
+    }
 
-
+    @Step
+    public void verifyDashboardBody(){
+        assertTrue(dashboardPage.verifyQuickLaunch());
+        assertTrue(dashboardPage.verifyQuickLaunchTitle().contains("Quick Launch"));
     }
 
 }
